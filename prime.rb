@@ -1,10 +1,9 @@
 # Add  code here!
-def prime?
-  (0..1).to_a.any? do |num|
-    if num % 1 == 0
-      true 
-    else 
-      false
+def prime?(integer)
+  if integer < 2
+    false
+    else integer % (-1..1) == 0
+      true
     end
   end
 end
